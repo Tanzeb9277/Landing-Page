@@ -13,6 +13,7 @@ header{
     width: 75%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     color: whitesmoke;
     justify-content: space-between;
     padding: 25px 0;
@@ -24,11 +25,13 @@ header{
 
 .nav-links{
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
 }
 
 .nav-links ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 24px;
 }
@@ -43,6 +46,10 @@ header{
     color: #f9faf8;
     display: flex;
     padding: 60px 0;
+}
+
+.text{
+    width: 50%;
 }
 
 .text h1{
@@ -64,6 +71,10 @@ header{
     padding: 5px 15px;
     font-size: 24px;
     font-weight: 600;
+}
+
+.button:hover{
+    background-color: #6aa2fc;
 }
 
 .image{
@@ -104,6 +115,7 @@ header{
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -147,6 +159,7 @@ header{
     margin: auto;
     border-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 50px 0;
@@ -169,4 +182,69 @@ footer{
     text-align: center;
     padding: 50px 0;
     color: #e5e7eb;
+}
+
+
+@media (max-width:768px) {
+
+    header .container{
+        width: 95%;
+    }
+    .container{
+        text-align: center;
+    }
+
+    .image{
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .card{
+        margin-top: 32px;
+    }
+    
+    .sign-up .container div h3{
+        font-size: 3.6vh;
+        padding: 5% 0;
+    }
+
+
+}
+
+@media (max-width:425px){
+    .nav-links{
+        display: none;
+    }
+
+
+    .container{
+        width: 95%;
+    }
+
+    .text *{
+        padding: 5px 0;
+    }
+
+    .text .button{
+        padding: 15px 20px;
+    }
+
+    .image{
+        height: inherit;
+    }
+
+    .header{
+        font-size: 36px;
+    }
+
+    .cards{
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .sign-up .container{
+        width: 95%;
+    }
+
+
 }
