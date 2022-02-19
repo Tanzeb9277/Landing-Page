@@ -221,6 +221,10 @@ footer{
         width: 95%;
     }
 
+    .text{
+        width: auto;
+    }
+
     .text *{
         padding: 5px 0;
     }
@@ -240,6 +244,13 @@ footer{
     .cards{
         justify-content: space-evenly;
         padding: 0;
+    }
+    .quote div{
+        width: 90%;
+    }
+
+    .quote div i{
+        font-size: 32px;
     }
 
     .sign-up .container{
